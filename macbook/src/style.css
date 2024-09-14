@@ -1,0 +1,60 @@
+/* root tabhi width or height full le payega jab html or body tag ke paas height or width full hogi. */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.masked {
+  position: relative;
+  background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg")
+    no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+}
+
+.masked::before {
+  content: "MacBook Pro.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg")
+    no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+  filter: blur(40px);
+  opacity: 0.8;
+}
+
+.masked::after {
+  content: "MacBook Pro.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg")
+    no-repeat center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+  filter: blur(20px);
+  opacity: 0.8;
+}
+
+.line {
+  border-bottom: 0.4px solid #333;
+}
